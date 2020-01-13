@@ -37,7 +37,7 @@ public class TC005_ArchiveChannel {
 			httprequest = RestAssured.given();
 			JSONObject requestParam = new JSONObject();
 			
-			requestParam.put("channel", "CSMKWFSQ6");
+			requestParam.put("channel", "CSKDHJ493");
 			httprequest.header("Authorization"," Bearer xoxp-903411961717-905608557686-903430649616-385e71a2408f9d8fa039fc9574ffa82d");
 			httprequest.header("Content-Type","application/json");
 			httprequest.body(requestParam.toJSONString());
@@ -63,6 +63,7 @@ public class TC005_ArchiveChannel {
 			Assert.assertEquals(response.getStatusCode(),200);
 			JsonPath jsnPath = response.jsonPath();
 			String empId = jsnPath.get("ok");
+			
 			
 		}
 	    
