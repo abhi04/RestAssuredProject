@@ -44,7 +44,7 @@ public class TC003_RenameChannel {
 		
 		
 		requestParam.put("name",ChannelName);
-		requestParam.put("channel", "CS80696FM");
+		requestParam.put("channel", "CSKDHJ493");
 		httprequest.header("Authorization"," Bearer xoxp-903411961717-905608557686-903430649616-385e71a2408f9d8fa039fc9574ffa82d");
 		httprequest.header("Content-Type","application/json");
 		httprequest.body(requestParam.toJSONString());
